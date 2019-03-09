@@ -1,5 +1,7 @@
 
 dataday/.npmignore
+dataday/node_modules
+dataday/platforms
 dataday/node_modules/.bin/acorn
 dataday/node_modules/.bin/atob
 dataday/node_modules/.bin/autoprefixer

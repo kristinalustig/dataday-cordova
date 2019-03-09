@@ -116,3 +116,21 @@ body {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+.slidercontainer {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10%;
+    height: 50%;
+    background: #794acf;
+}

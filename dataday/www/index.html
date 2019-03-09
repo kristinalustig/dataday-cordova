@@ -20,7 +20,6 @@ limitations under the License.
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>DataDay</title>
     </head>
@@ -31,13 +30,41 @@ limitations under the License.
             <button class="flex-none px-4">S</button>
             <button class="flex-none px-4">Set</button>
         </div>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+
+        <div class="flex-col items-stretch justify-between">
+            <div class="flex-1 flex bg-blue-lighter" id="greeting">
+                <div class="flex-none">Image</div>
+                <div class="flex-1 text-2xl text-center py-4">
+                    Good morning, Kristina. :-)
+                </div>
+                <button class="flex-none px-4" id="js-close-greeting">X</button>
             </div>
+            <div class="flex-1 text-3xl text-center font-light py-4" id="currentdate">
+                Monday, March <strong>15</strong>
+            </div>
+            <div class="flex-1 text-2xl text-center pb-8 font-light" id="questiontime">
+                Morning Questions
+            </div>
+
+            <div id ="questionlist">
+
+            <div class="flex-1" id="wakeuptime">
+                <div class="font-bold text-2xl pl-4">
+                    What time did you wake up?
+                </div>
+                <div class="slidercontainer self-center w-5/6" id="js-wakeuptime-slider">
+                    <input type="range" class="slider">
+                </div>
+            </div>
+
+            <div class="flex-1 self-stretch border-b border-grey-lighter px-4"></div>
+
+            </div>
+
         </div>
-        <div class="text-red">does this work</div>
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="bundle.js"></script>
+        <script type="text/javascript" src="./js/data-functions.js"></script>
     </body>
 </html>
